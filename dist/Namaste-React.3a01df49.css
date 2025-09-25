@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#heading {
+  color: #8a2be2;
+}
+
+.header {
+  border-bottom: .5px solid #864141;
+  justify-content: space-between;
+  display: flex;
+}
+
+.logo {
+  width: 100px;
+  margin-top: -15px;
+}
+
+.nav-items {
+  margin-right: 28px;
+  font-size: 22px;
+}
+
+.nav-items > ul {
+  display: flex;
+}
+
+.nav-items > ul > li {
+  cursor: pointer;
+  margin: -10px 10px 0;
+  padding-top: 30px;
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.nav-items > ul > li > a {
+  color: #000;
+  text-decoration: none;
+}
+
+.cart {
+  margin-left: -20px;
+  font-size: 26px;
+}
+
+.res-card {
+  border-radius: 4px;
+  width: 200px;
+  height: 360px;
+  margin: 5px;
+  padding: 8px;
+  box-shadow: 1px 1px 2px 2px #8b635f;
+}
+
+.res-card:hover {
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.res-container {
+  flex-wrap: wrap;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+}
+
+.search {
+  padding: 10px;
+}
+
+.res-logo {
+  width: 100%;
+}
+
+.filter-btn {
+  cursor: pointer;
+  border-radius: 7px;
+  height: 31px;
+  margin-top: 8px;
+  margin-left: 15px;
+}
+
+.shimmer-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.shimmer-card {
+  background: #f0f0f0;
+  border-radius: 12px;
+  width: 230px;
+  height: 300px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-card:before {
+  content: "";
+  background: linear-gradient(90deg, #fff0 0%, #fff9 45%, #ffffff1a 55%, #fff0 100%);
+  animation: 1.6s linear infinite shimmer-move;
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+}
+
+.shimmer-card:after {
+  content: "";
+  filter: blur(25px);
+  opacity: .7;
+  pointer-events: none;
+  background: radial-gradient(25% 40% at 20% 30%, #ffffff80, #0000 60%), radial-gradient(30% 50% at 70%, #ffffff59, #0000 65%), radial-gradient(20% 35% at 40% 80%, #fff6, #0000 60%);
+  width: 180%;
+  height: 160%;
+  animation: 2.4s ease-in-out infinite wave-move;
+  position: absolute;
+  top: -30%;
+  left: -40%;
+}
+
+@keyframes shimmer-move {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes wave-move {
+  0% {
+    transform: translateY(-8%)rotate(-2deg)scale(1.02);
+  }
+
+  50% {
+    transform: translateY(8%)rotate(2deg)scale(1.01);
+  }
+
+  100% {
+    transform: translateY(-8%)rotate(-2deg)scale(1.02);
+  }
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 4px;
+  width: 75px;
+  height: 38px;
+  margin-top: 13px;
+}
+
+.filter {
+  display: flex;
+}
+
+input {
+  border-radius: 7px;
+  width: 140px;
+  height: 26px;
+  margin-top: 8px;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.input-btn {
+  cursor: pointer;
+  border-radius: 6px;
+  width: 78px;
+  height: 29px;
+  margin-left: 3px;
+}
+
+.about-head {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.about-p {
+  background-color: #f0f0f0;
+  height: 40vh;
+}
+
+.about-h {
+  opacity: .6;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.middle {
+  border-bottom: 1px solid #c0baba;
+  height: 55vh;
+}
+
+.abt-head {
+  text-align: center;
+  margin-top: 28px;
+  font-size: 40px;
+}
+
+.about-img1 {
+  margin-top: 28px;
+  transition: all .5s ease-in, transform .5s ease-in;
+}
+
+.about-img1:hover {
+  transform: scale(1.05);
+}
+
+.middle1 {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.text {
+  opacity: .7;
+  margin-top: 90px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.middle2 {
+  border-bottom: 1px solid #c0baba;
+  height: 80vh;
+}
+
+.abt1-head {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 40px;
+}
+
+.side {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.side1 {
+  opacity: .7;
+  margin-top: 110px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.side1-img {
+  border: 1px solid #d8d3d3;
+  border-radius: 32px;
+  height: 380px;
+  margin-top: 35px;
+  transition: all .5s ease-in, transform .5s ease-in;
+}
+
+.side1-img:hover {
+  transform: scale(1.05);
+}
+/*# sourceMappingURL=Namaste-React.3a01df49.css.map */
