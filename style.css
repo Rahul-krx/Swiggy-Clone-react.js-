@@ -51,6 +51,15 @@
   border: 1px solid black;
   cursor: pointer;
 }
+ .child{
+  font-size: 29px;
+  
+ 
+}
+.card-elem>li{
+  padding: 10px;
+ 
+}
 .res-container {
   display: flex;
   flex-wrap: wrap;

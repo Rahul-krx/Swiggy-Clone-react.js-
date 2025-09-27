@@ -1,4 +1,6 @@
 import { CDN_URL } from "../utils/constants";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faStar} from '@fortawesome/free-solid-svg-icons';
 
 const Restrocard = (props) =>{
   const{resData} = props;
@@ -9,10 +11,10 @@ const Restrocard = (props) =>{
     
     <div className="res-card" >
       <img className="res-logo" src= {CDN_URL+ cloudinaryImageId} alt="image" />
-      <h3>{name}</h3>
-      <h5>{cuisines.join(", ")}</h5> 
-      <h5>{avgRating} stars</h5>
-      <h5>{costForTwo}</h5>
+      <h3 className="child">{name}</h3>
+      <h5 className="child">{cuisines.join(", ")}</h5> 
+      <h5 className="child"><FontAwesomeIcon icon={faStar} style={{color: "#63E6BE",}} /> {avgRating} stars</h5>
+      <h5 className="child">{costForTwo}</h5>
 
     </div>
    
