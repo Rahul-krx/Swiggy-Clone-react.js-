@@ -59,6 +59,14 @@
   border: 1px solid #000;
 }
 
+.child {
+  font-size: 29px;
+}
+
+.card-elem > li {
+  padding: 10px;
+}
+
 .res-container {
   flex-wrap: wrap;
   margin: 20px;

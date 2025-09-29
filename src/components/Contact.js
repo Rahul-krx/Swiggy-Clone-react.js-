@@ -1,8 +1,34 @@
 // import Header from "./Header";
+import React from "react";
 import User from "./User";
 import UserClass from "./UserClass";
-const Contact = () =>{
-    return(
+
+class Contact extends React.Component{
+    // mounting is the first phase of a react component`s lifeCycle: - so here first Contact component in mounted then all thing goes:->
+
+    // React lifecycle:- So here first constructor will be called then the render will be  called . and if it has child component then also first child constructor will be called then Render will be called then child ComponentDidMount will be called then last the componentDidMount : - constructor -> Render ->componentDidMount.
+
+    //{ in case of child componentDidMount}
+    // Parent constructor ->Parent Render -> Child Constructor -> Child Render ->  Child componentDidMount -> parent componentDidMount
+
+    //{ in case of two child componentDidMount}
+    // Parent constructor ->Parent Render -> Child1 Constructor -> Child1 Render -> Child2 Constructor -> Child2 Render -> Child1 componentDidMount -> Child2 componentDidMount -> parent componentDidMount
+
+
+    constructor(props){
+        super(props)
+
+        console.log("parent constructor");
+    }
+
+    // used in to  make API call:- but why? - > because it also follow the same as useEffect { load -> Render -> API call -> Render}
+    componentDidMount(){
+        console.log("parent componentDidmount Called");
+    }
+    render(){
+
+        console.log("Parent render");
+     return(
         <>
         <h2>Contct us page</h2>
         <User name={"Rahul Kumar (functional)"}/>
@@ -13,5 +39,6 @@ const Contact = () =>{
         <UserClass name={"Rahul Kumar (class component)"}/>
         </>
     )
+}
 }
 export default Contact;
