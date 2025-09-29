@@ -56,7 +56,7 @@
 54R:\Namaste-React\node_modules\@swc\helpers\_\_inherits134031940698987494 1
 87R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faSquareCaretRight.d.ts134031940714358208 0
 74R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faPeace.js134031940704516884 0
-27R:\Namaste-React\.gitignore134016429654971251 0
+27R:\Namaste-React\.gitignore134034568865432064 0
 73R:\Namaste-React\node_modules\@parcel\packager-wasm\lib\wasm-sourcemap.js134031940693318995 0
 49R:\Namaste-React\node_modules\react-dom\client.js134031940693152340 0
 74R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faTooth.js134031940707406825 0
@@ -70,7 +70,7 @@
 82R:\Namaste-React\node_modules\caniuse-lite\data\features\contentsecuritypolicy2.js134031940697321046 0
 49R:\Namaste-React\node_modules\react-dom\server.js134031940697644096 0
 91R:\Namaste-React\node_modules\@msgpackr-extract\msgpackr-extract-win32-x64\node.abi115.node134031940693731530 0
-21R:\Namaste-React\dist134031940859397805 1
+21R:\Namaste-React\dist134035543456059484 1
 45R:\Namaste-React\node_modules\semver\index.js134031940695027514 0
 87R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faDiagramSuccessor.d.ts134031940710260666 0
 37R:\Namaste-React\node_modules\is-glob134031940693318995 1
@@ -151,7 +151,7 @@
 75R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faDeaf.d.ts134031940710199150 0
 85R:\Namaste-React\node_modules\lmdb\node_modules\node-addon-api\tools\eslint-format.js134031940694900850 0
 61R:\Namaste-React\node_modules\caniuse-lite\data\regions\PW.js134031940702070152 0
-41R:\Namaste-React\src\components\Header.js134028607751057480 0
+41R:\Namaste-React\src\components\Header.js134034702218517313 0
 80R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faGuaraniSign.js134031940702676290 0
 61R:\Namaste-React\node_modules\caniuse-lite\data\regions\AX.js134031940696285548 0
 81R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faMicroscope.d.ts134031940712649328 0
@@ -191,7 +191,7 @@
 78R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faExplosion.js134031940701644468 0
 65R:\Namaste-React\node_modules\utility-types\dist\utility-types.js134031940693815363 0
 63R:\Namaste-React\node_modules\@parcel\transformer-image\LICENSE134031940692954794 0
-42R:\Namaste-React\src\components\Contact.js134031938489004699 0
+42R:\Namaste-React\src\components\Contact.js134035543454209685 0
 89R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faMagnifyingGlassChart.js134031940704000269 0
 43R:\Namaste-React\node_modules\dotenv-expand134031940694247335 1
 83R:\Namaste-React\node_modules\caniuse-lite\data\features\css-backgroundblendmode.js134031940697478178 0
@@ -228,7 +228,7 @@
 42R:\Namaste-React\src\components\Shimmer.js134028579233928543 0
 84R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faSquareCaretDown.js134031940706476542 0
 85R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faHouseChimneyUser.js134031940703345086 0
-44R:\Namaste-React\src\components\UserClass.js134033822097636062 0
+44R:\Namaste-React\src\components\UserClass.js134035514664820063 0
 73R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faFire.js134031940702156061 0
 61R:\Namaste-React\node_modules\caniuse-lite\data\regions\DO.js134031940699160096 0
 95R:\Namaste-React\node_modules\node-gyp-build-optional-packages\node_modules\detect-libc\LICENSE134031940692983425 0
@@ -3182,7 +3182,7 @@
 79R:\Namaste-React\node_modules\caniuse-lite\data\features\css-optional-pseudo.js134031940698354042 0
 99R:\Namaste-React\node_modules\@parcel\core\test\fixtures\invalid-target-source-missing\package.json134031940698508673 0
 53R:\Namaste-React\node_modules\@parcel\runtime-rsc\src134031940693318995 1
-48R:\Namaste-React\dist\balanced-diet.8d9c9991.png134031940858699404 0
+48R:\Namaste-React\dist\balanced-diet.8d9c9991.png134035514250413667 0
 80R:\Namaste-React\node_modules\caniuse-lite\data\features\css-overflow-overlay.js134031940698354042 0
 64R:\Namaste-React\node_modules\caniuse-lite\data\features\ruby.js134031940702156061 0
 72R:\Namaste-React\node_modules\caniuse-lite\data\features\css-overflow.js134031940698457217 0
@@ -6795,7 +6795,7 @@
 75R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faMapPin.js134031940704109906 0
 77R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faMapSigns.js134031940704109906 0
 75R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faMars.d.ts134031940712586438 0
-51R:\Namaste-React\dist\Namaste-React.2c54e4d8.js.map134031940859397805 0
+51R:\Namaste-React\dist\Namaste-React.2c54e4d8.js.map134035543456059484 0
 80R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faRadiation.d.ts134031940713555630 0
 73R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faMars.js134031940704109906 0
 83R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faSnowboarding.d.ts134031940714148904 0
@@ -6819,7 +6819,7 @@
 75R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faMask.d.ts134031940712586438 0
 73R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faMask.js134031940704161182 0
 81R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faMasksTheater.js134031940704177464 0
-52R:\Namaste-React\dist\Namaste-React.3a01df49.css.map134031940858404487 0
+52R:\Namaste-React\dist\Namaste-React.3a01df49.css.map134035514250155661 0
 85R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faMaskVentilator.d.ts134031940712586438 0
 85R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faPhoneSquareAlt.d.ts134031940713306303 0
 83R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faMaskVentilator.js134031940704177464 0
@@ -7666,7 +7666,7 @@
 82R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faWindowRestore.js134031940708197123 0
 81R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faWineBottle.d.ts134031940715746446 0
 79R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faWineBottle.js134031940708197123 0
-32R:\Namaste-React\dist\index.html134031940858323182 0
+32R:\Namaste-React\dist\index.html134035514250088961 0
 80R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faWineGlass.d.ts134031940715746446 0
 85R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faWineGlassEmpty.d.ts134031940715746446 0
 74R:\Namaste-React\node_modules\@fortawesome\free-solid-svg-icons\faWon.d.ts134031940715746446 0
@@ -7707,5 +7707,5 @@
 57R:\Namaste-React\node_modules\.bin\update-browserslist-db134031940716089697 0
 61R:\Namaste-React\node_modules\.bin\update-browserslist-db.cmd134031940716089697 0
 61R:\Namaste-React\node_modules\.bin\update-browserslist-db.ps1134031940716089697 0
-47R:\Namaste-React\dist\Namaste-React.2c54e4d8.js134031940859384037 0
-48R:\Namaste-React\dist\Namaste-React.3a01df49.css134031940858354030 0
+47R:\Namaste-React\dist\Namaste-React.2c54e4d8.js134035543455859763 0
+48R:\Namaste-React\dist\Namaste-React.3a01df49.css134035514250155661 0

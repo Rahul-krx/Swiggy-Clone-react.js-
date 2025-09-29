@@ -51900,6 +51900,8 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _constants = require("../utils/constants");
+var _reactFontawesome = require("@fortawesome/react-fontawesome");
+var _freeSolidSvgIcons = require("@fortawesome/free-solid-svg-icons");
 const Restrocard = (props)=>{
     const { resData } = props;
     const { cloudinaryImageId, name, cuisines, avgRating, costForTwo } = resData.info;
@@ -51913,44 +51915,59 @@ const Restrocard = (props)=>{
                 alt: "image"
             }, void 0, false, {
                 fileName: "src/components/RestroCard.js",
-                lineNumber: 11,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: name
-            }, void 0, false, {
-                fileName: "src/components/RestroCard.js",
-                lineNumber: 12,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-                children: cuisines.join(", ")
-            }, void 0, false, {
-                fileName: "src/components/RestroCard.js",
                 lineNumber: 13,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-                children: [
-                    avgRating,
-                    " stars"
-                ]
-            }, void 0, true, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                className: "child",
+                children: name
+            }, void 0, false, {
                 fileName: "src/components/RestroCard.js",
                 lineNumber: 14,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-                children: costForTwo
+                className: "child",
+                children: cuisines.join(", ")
             }, void 0, false, {
                 fileName: "src/components/RestroCard.js",
                 lineNumber: 15,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                className: "child",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
+                        icon: (0, _freeSolidSvgIcons.faStar),
+                        style: {
+                            color: "#63E6BE"
+                        }
+                    }, void 0, false, {
+                        fileName: "src/components/RestroCard.js",
+                        lineNumber: 16,
+                        columnNumber: 29
+                    }, undefined),
+                    " ",
+                    avgRating,
+                    " stars"
+                ]
+            }, void 0, true, {
+                fileName: "src/components/RestroCard.js",
+                lineNumber: 16,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                className: "child",
+                children: costForTwo
+            }, void 0, false, {
+                fileName: "src/components/RestroCard.js",
+                lineNumber: 17,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/RestroCard.js",
-        lineNumber: 10,
+        lineNumber: 12,
         columnNumber: 5
     }, undefined);
 };
@@ -51964,7 +51981,7 @@ $RefreshReg$(_c, "Restrocard");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","../utils/constants":"dIVBf","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"fSZbx":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","../utils/constants":"dIVBf","@fortawesome/react-fontawesome":"cmCSw","@fortawesome/free-solid-svg-icons":"gQz28","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"fSZbx":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$9ecf = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$9ecf.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -52293,62 +52310,78 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 var _user = require("./User");
 var _userDefault = parcelHelpers.interopDefault(_user);
 var _userClass = require("./UserClass");
 var _userClassDefault = parcelHelpers.interopDefault(_userClass);
-const Contact = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "Contct us page"
-            }, void 0, false, {
-                fileName: "src/components/Contact.js",
-                lineNumber: 7,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userDefault.default), {
-                name: "Rahul Kumar (functional)"
-            }, void 0, false, {
-                fileName: "src/components/Contact.js",
-                lineNumber: 8,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "contact us on +919674632101"
-            }, void 0, false, {
-                fileName: "src/components/Contact.js",
-                lineNumber: 9,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "For more info please visit www.foodierestaurant.com"
-            }, void 0, false, {
-                fileName: "src/components/Contact.js",
-                lineNumber: 10,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userClassDefault.default), {
-                name: "Rahul Kumar (class component)"
-            }, void 0, false, {
-                fileName: "src/components/Contact.js",
-                lineNumber: 13,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true);
-};
-_c = Contact;
+class Contact extends (0, _reactDefault.default).Component {
+    // mounting is the first phase of a react component`s lifeCycle: - so here first Contact component in mounted then all thing goes:->
+    // React lifecycle:- So here first constructor will be called then the render will be  called . and if it has child component then also first child constructor will be called then Render will be called then child ComponentDidMount will be called then last the componentDidMount : - constructor -> Render ->componentDidMount.
+    //{ in case of child componentDidMount}
+    // Parent constructor ->Parent Render -> Child Constructor -> Child Render ->  Child componentDidMount -> parent componentDidMount
+    //{ in case of two child componentDidMount}
+    // Parent constructor ->Parent Render -> Child1 Constructor -> Child1 Render -> Child2 Constructor -> Child2 Render -> Child1 componentDidMount -> Child2 componentDidMount -> parent componentDidMount
+    constructor(props){
+        super(props);
+        console.log("parent constructor");
+    }
+    // used in to  make API call:- but why? - > because it also follow the same as useEffect { load -> Render -> API call -> Render}
+    componentDidMount() {
+        console.log("parent componentDidmount Called");
+    }
+    render() {
+        console.log("Parent render");
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: "Contct us page"
+                }, void 0, false, {
+                    fileName: "src/components/Contact.js",
+                    lineNumber: 33,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userDefault.default), {
+                    name: "Rahul Kumar (functional)"
+                }, void 0, false, {
+                    fileName: "src/components/Contact.js",
+                    lineNumber: 34,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: "contact us on +919674632101"
+                }, void 0, false, {
+                    fileName: "src/components/Contact.js",
+                    lineNumber: 35,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: "For more info please visit www.foodierestaurant.com"
+                }, void 0, false, {
+                    fileName: "src/components/Contact.js",
+                    lineNumber: 36,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userClassDefault.default), {
+                    name: "Rahul Kumar (class component)"
+                }, void 0, false, {
+                    fileName: "src/components/Contact.js",
+                    lineNumber: 39,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true);
+    }
+}
 exports.default = Contact;
-var _c;
-$RefreshReg$(_c, "Contact");
 
   $parcel$ReactRefreshHelpers$34fd.postlude(module);
 } finally {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","./User":"gT672","./UserClass":"dHre4","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"gT672":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./User":"gT672","./UserClass":"dHre4","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"gT672":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$1070 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$1070.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -52415,14 +52448,62 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 class UserClass extends (0, _reactDefault.default).Component {
+    // here first constructor is called then render called.
     constructor(props){
         super(props);
+        // this.state: A special object that stores data for a component.{count,and count2 are two different state }
+        this.state = {
+            count: 0,
+            count2: 3
+        };
+        console.log(" child Constructor called");
+    }
+    componentDidMount() {
+        console.log(" child ComponentDidMount called");
     }
     render() {
+        console.log("child render");
         const { name } = this.props;
+        const { count } = this.state;
+        const { count2 } = this.state;
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "userClass",
             children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: [
+                        "count= ",
+                        count
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/UserClass.js",
+                    lineNumber: 27,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: [
+                        "count= ",
+                        count2
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/UserClass.js",
+                    lineNumber: 28,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    onClick: ()=>{
+                        // never update state variable directly:-
+                        // this.state.count = this.state.count + 1;  {wrong way}
+                        this.setState({
+                            count: this.state.count + 1,
+                            count2: this.state.count2 + 1
+                        });
+                    },
+                    children: "count Increase"
+                }, void 0, false, {
+                    fileName: "src/components/UserClass.js",
+                    lineNumber: 29,
+                    columnNumber: 13
+                }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                     children: [
                         "Name: ",
@@ -52430,27 +52511,27 @@ class UserClass extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 12,
+                    lineNumber: 38,
                     columnNumber: 13
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                     children: "Location: Bihar"
                 }, void 0, false, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 13,
+                    lineNumber: 39,
                     columnNumber: 13
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                     children: "Gmail: foodieres@gmail.com"
                 }, void 0, false, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 14,
+                    lineNumber: 40,
                     columnNumber: 13
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/UserClass.js",
-            lineNumber: 11,
+            lineNumber: 26,
             columnNumber: 9
         }, this);
     }
