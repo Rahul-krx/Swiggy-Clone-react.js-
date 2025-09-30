@@ -52094,8 +52094,21 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
 var _constants = require("../utils/constants");
+var _s = $RefreshSig$();
 const About = ()=>{
+    _s();
+    (0, _react.useEffect)(()=>{
+        // here this will call infinite time even if you changes the page . so this is a cons of react SPA.
+        const timer = setInterval(()=>{
+            console.log("Timer called");
+        }, 2000);
+        // To stop the timer from infinite run:-- it also works as a componentWillUnmout.
+        return ()=>{
+            clearInterval(timer);
+        };
+    }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -52103,7 +52116,7 @@ const About = ()=>{
                 children: "ABOUT US "
             }, void 0, false, {
                 fileName: "src/components/About.js",
-                lineNumber: 5,
+                lineNumber: 20,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -52114,19 +52127,19 @@ const About = ()=>{
                         "Foodie is a new age consumer-first organization offering an easy-to-use convenience platform, accessible through a ",
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                             fileName: "src/components/About.js",
-                            lineNumber: 7,
+                            lineNumber: 22,
                             columnNumber: 144
                         }, undefined),
                         " unified app.\uD83D\uDE0B"
                     ]
                 }, void 0, true, {
                     fileName: "src/components/About.js",
-                    lineNumber: 7,
+                    lineNumber: 22,
                     columnNumber: 5
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/About.js",
-                lineNumber: 6,
+                lineNumber: 21,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -52137,7 +52150,7 @@ const About = ()=>{
                         children: "GET TO KNOW US"
                     }, void 0, false, {
                         fileName: "src/components/About.js",
-                        lineNumber: 10,
+                        lineNumber: 25,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -52149,26 +52162,26 @@ const About = ()=>{
                                     "Our mission is to elevate the quality of life of the urban ",
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                         fileName: "src/components/About.js",
-                                        lineNumber: 14,
+                                        lineNumber: 29,
                                         columnNumber: 94
                                     }, undefined),
                                     "consumer by offering unparalleled convenience. ",
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                         fileName: "src/components/About.js",
-                                        lineNumber: 15,
+                                        lineNumber: 30,
                                         columnNumber: 61
                                     }, undefined),
                                     " Convenience is what makes us tick. It\u2019s what makes us ",
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                         fileName: "src/components/About.js",
-                                        lineNumber: 15,
+                                        lineNumber: 30,
                                         columnNumber: 121
                                     }, undefined),
                                     " get out of bed and say, \u201CLet\u2019s do this."
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/About.js",
-                                lineNumber: 14,
+                                lineNumber: 29,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -52178,24 +52191,24 @@ const About = ()=>{
                                     src: (0, _constants.ABOUT_URL)
                                 }, void 0, false, {
                                     fileName: "src/components/About.js",
-                                    lineNumber: 19,
+                                    lineNumber: 34,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/About.js",
-                                lineNumber: 18,
+                                lineNumber: 33,
                                 columnNumber: 9
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/About.js",
-                        lineNumber: 13,
+                        lineNumber: 28,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/About.js",
-                lineNumber: 9,
+                lineNumber: 24,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -52206,7 +52219,7 @@ const About = ()=>{
                         children: "INDUSTRY PIONEER"
                     }, void 0, false, {
                         fileName: "src/components/About.js",
-                        lineNumber: 24,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -52219,43 +52232,43 @@ const About = ()=>{
                                         "Being among the first few entrants, Foodie has successfully ",
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                             fileName: "src/components/About.js",
-                                            lineNumber: 28,
+                                            lineNumber: 43,
                                             columnNumber: 80
                                         }, undefined),
                                         " pioneered the hyperlocal commerce industry in India, launching ",
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                             fileName: "src/components/About.js",
-                                            lineNumber: 28,
+                                            lineNumber: 43,
                                             columnNumber: 149
                                         }, undefined),
                                         " Food Delivery in 2014 and Quick Commerce in 2020. Due to the ",
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                             fileName: "src/components/About.js",
-                                            lineNumber: 28,
+                                            lineNumber: 43,
                                             columnNumber: 216
                                         }, undefined),
                                         " pioneering status of Swiggy, it is well-recognised as a leader in ",
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                             fileName: "src/components/About.js",
-                                            lineNumber: 28,
+                                            lineNumber: 43,
                                             columnNumber: 288
                                         }, undefined),
                                         " innovation in hyperlocal commerce and as a brand synonymous with ",
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                             fileName: "src/components/About.js",
-                                            lineNumber: 28,
+                                            lineNumber: 43,
                                             columnNumber: 359
                                         }, undefined),
                                         " the categories it is present in."
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/About.js",
-                                    lineNumber: 28,
+                                    lineNumber: 43,
                                     columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/About.js",
-                                lineNumber: 27,
+                                lineNumber: 42,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -52265,29 +52278,30 @@ const About = ()=>{
                                     src: (0, _constants.ABOUT1_URL)
                                 }, void 0, false, {
                                     fileName: "src/components/About.js",
-                                    lineNumber: 31,
+                                    lineNumber: 46,
                                     columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/About.js",
-                                lineNumber: 30,
+                                lineNumber: 45,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/About.js",
-                        lineNumber: 26,
+                        lineNumber: 41,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/About.js",
-                lineNumber: 23,
+                lineNumber: 38,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true);
 };
+_s(About, "OD7bBpZva5O2jO+Puf00hKivP7c=");
 _c = About;
 exports.default = About;
 var _c;
@@ -52298,7 +52312,7 @@ $RefreshReg$(_c, "About");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","../utils/constants":"dIVBf","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"asQvq":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","../utils/constants":"dIVBf","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react":"jMk1U"}],"asQvq":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$34fd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$34fd.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -52329,7 +52343,17 @@ class Contact extends (0, _reactDefault.default).Component {
     }
     // used in to  make API call:- but why? - > because it also follow the same as useEffect { load -> Render -> API call -> Render}
     componentDidMount() {
+        // here this will call infinite time even if you changes the page . so this is a cons of react SPA.
+        this.Timer = setInterval(()=>{
+            console.log("Setinterval called infinite");
+        }, 2000);
         console.log("parent componentDidmount Called");
+    }
+    // it is called when we are leaving the page:--
+    componentWillUnmount() {
+        // To stop the timer from infinite run:--
+        clearInterval(this.Timer);
+        console.log("Parent ComponentWillUnmount");
     }
     render() {
         console.log("Parent render");
@@ -52339,35 +52363,35 @@ class Contact extends (0, _reactDefault.default).Component {
                     children: "Contct us page"
                 }, void 0, false, {
                     fileName: "src/components/Contact.js",
-                    lineNumber: 33,
+                    lineNumber: 46,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userDefault.default), {
                     name: "Rahul Kumar (functional)"
                 }, void 0, false, {
                     fileName: "src/components/Contact.js",
-                    lineNumber: 34,
+                    lineNumber: 47,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                     children: "contact us on +919674632101"
                 }, void 0, false, {
                     fileName: "src/components/Contact.js",
-                    lineNumber: 35,
+                    lineNumber: 48,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     children: "For more info please visit www.foodierestaurant.com"
                 }, void 0, false, {
                     fileName: "src/components/Contact.js",
-                    lineNumber: 36,
+                    lineNumber: 49,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userClassDefault.default), {
                     name: "Rahul Kumar (class component)"
                 }, void 0, false, {
                     fileName: "src/components/Contact.js",
-                    lineNumber: 39,
+                    lineNumber: 52,
                     columnNumber: 9
                 }, this)
             ]
@@ -52476,7 +52500,7 @@ class UserClass extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 27,
+                    lineNumber: 28,
                     columnNumber: 13
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -52486,7 +52510,7 @@ class UserClass extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 28,
+                    lineNumber: 29,
                     columnNumber: 13
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -52501,7 +52525,7 @@ class UserClass extends (0, _reactDefault.default).Component {
                     children: "count Increase"
                 }, void 0, false, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 29,
+                    lineNumber: 30,
                     columnNumber: 13
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -52511,27 +52535,27 @@ class UserClass extends (0, _reactDefault.default).Component {
                     ]
                 }, void 0, true, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 38,
+                    lineNumber: 39,
                     columnNumber: 13
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                     children: "Location: Bihar"
                 }, void 0, false, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 39,
+                    lineNumber: 40,
                     columnNumber: 13
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                     children: "Gmail: foodieres@gmail.com"
                 }, void 0, false, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 40,
+                    lineNumber: 41,
                     columnNumber: 13
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/UserClass.js",
-            lineNumber: 26,
+            lineNumber: 27,
             columnNumber: 9
         }, this);
     }
