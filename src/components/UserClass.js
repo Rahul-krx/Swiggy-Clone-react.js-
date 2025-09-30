@@ -16,6 +16,7 @@ class UserClass extends React.Component{
       componentDidMount(){
         console.log(" child ComponentDidMount called")
       }
+      
     render(){
         console.log("child render");
         const{name} = this.props;

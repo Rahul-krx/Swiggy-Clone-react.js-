@@ -23,8 +23,21 @@ class Contact extends React.Component{
 
     // used in to  make API call:- but why? - > because it also follow the same as useEffect { load -> Render -> API call -> Render}
     componentDidMount(){
+
+        // here this will call infinite time even if you changes the page . so this is a cons of react SPA.
+        this.Timer = setInterval(() =>{
+
+            console.log("Setinterval called infinite");
+        },2000)
         console.log("parent componentDidmount Called");
     }
+
+    // it is called when we are leaving the page:--
+    componentWillUnmount(){
+        // To stop the timer from infinite run:--
+        clearInterval(this.Timer);
+        console.log("Parent ComponentWillUnmount");
+      }
     render(){
 
         console.log("Parent render");

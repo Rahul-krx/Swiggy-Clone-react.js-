@@ -1,5 +1,20 @@
- import { ABOUT_URL, ABOUT1_URL} from "../utils/constants";
+ import { useEffect } from "react";
+import { ABOUT_URL, ABOUT1_URL} from "../utils/constants";
 const About = () =>{
+
+    useEffect(() =>{
+
+         // here this will call infinite time even if you changes the page . so this is a cons of react SPA.
+        const timer = setInterval(() =>{
+            console.log("Timer called");
+        },2000);
+
+         // To stop the timer from infinite run:-- it also works as a componentWillUnmout.
+        return () =>{
+            clearInterval(timer);
+        }
+
+    }, [])
     return(
     <>
     <h2 className="about-head">ABOUT US </h2>
