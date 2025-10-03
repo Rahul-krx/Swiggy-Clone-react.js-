@@ -1,8 +1,9 @@
 import { LOGO_URL } from "../utils/constants";
-import { useState } from "react";
+import { use, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Header = () =>{
   // const btnName = 'Login';
@@ -17,7 +18,7 @@ const Header = () =>{
   // useEffect(() =>{
   //   console.log('useEffect called');
   // })
-
+  const onlineStatus = useOnlineStatus();
   return(
     
     <div className="header">
@@ -27,9 +28,11 @@ const Header = () =>{
   
     <div className="nav-items">
       <ul>
+        <li>Online Status: {onlineStatus ? "✅" : "🔴"}</li>
         <li> <Link to="/"> Home </Link></li>
         <li><Link to="/about"> About </Link></li>
         <li> <Link to="/contact"> Contact us </Link></li>
+        <li> <Link to="/grocery"> Grocery </Link></li>
         <li className="cart"><FontAwesomeIcon icon={faCartShopping} /></li>
 
         {/* if you click on btn then react will re render the whole header  */}
