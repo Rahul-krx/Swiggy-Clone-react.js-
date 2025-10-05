@@ -21,22 +21,22 @@ const Header = () =>{
   const onlineStatus = useOnlineStatus();
   return(
     
-    <div className="header">
+    <div className="flex  justify-between border-b-1">
       <div className="logo-container">
-    <img className="logo" src={LOGO_URL}/>
+    <img className="logo w-32" src={LOGO_URL}/>
     </div>
   
-    <div className="nav-items">
-      <ul>
-        <li>Online Status: {onlineStatus ? "✅" : "🔴"}</li>
-        <li> <Link to="/"> Home </Link></li>
-        <li><Link to="/about"> About </Link></li>
-        <li> <Link to="/contact"> Contact us </Link></li>
-        <li> <Link to="/grocery"> Grocery </Link></li>
-        <li className="cart"><FontAwesomeIcon icon={faCartShopping} /></li>
+    <div className="nav-items p-4 m-4 ">
+      <ul className="flex items-center text-xl font-semibold">
+        <li className="px-4">Online Status: {onlineStatus ? "✅" : "🔴"}</li>
+        <li className="px-4"> <Link to="/"> Home </Link></li>
+        <li className="px-4"><Link to="/about"> About </Link></li>
+        <li className="px-4"> <Link to="/contact"> Contact us </Link></li>
+        <li className="px-4"> <Link to="/grocery"> Grocery </Link></li>
+        <li className="cart px-4 "><FontAwesomeIcon icon={faCartShopping} /></li>
 
         {/* if you click on btn then react will re render the whole header  */}
-      <button className="btn" onClick={() => {
+      <button className="btn px-4 border-1 rounded-lg py-2 bg-blue-400 " onClick={() => {
         btnName === "Login" ? setbtnName('Logout'): setbtnName('Login')}}>{btnName}</button>   
       </ul>
     </div>
