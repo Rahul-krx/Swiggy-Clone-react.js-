@@ -1,9 +1,10 @@
-import Restrocard from "./RestroCard";
+import Restrocard, {withPromotedLabel} from "./RestroCard";
 // import ResList from "../utils/mockData";
 import { useState, useEffect} from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+
 
 // useState  is used for creating local state variable inside your functional component.
 
@@ -11,6 +12,8 @@ import useOnlineStatus from "../utils/useOnlineStatus";
    const [resList, setResList] = useState([]);
    const [searchRes, setsearchRes] = useState("");
    const [filteredRestaurants, setfilteredRestaurants] = useState([]);
+
+   const ResCardPromoted = withPromotedLabel(Restrocard);
 
 
    useEffect(()=>{
@@ -25,7 +28,7 @@ import useOnlineStatus from "../utils/useOnlineStatus";
     const data = await fetch("https://corsproxy.io/https://www.swiggy.com/dapi/restaurants/list/v5?lat=24.8032012&lng=84.9990981&offset=0&sortBy=RELEVANCE&pageType=SEE_ALL&page_type=DESKTOP_WEB_LISTING");
 
     const json = await data.json();
-    console.log(json);
+    // console.log(json);
     // const restaurants =
     //   json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants ||
     //   [];
@@ -60,7 +63,7 @@ const restaurants =
     <div className="body">
       <div className="filter flex mb-4">
         <div className="search-box">
-          <input type="text" className="search-input w-42 border-1 rounded-md mt-4 h-10 ml-4 mx-2 outline-0" value={searchRes} onChange={(e) =>{
+          <input type="text" className="search-input w-42 border-1 rounded-md mt-4 h-10 ml-4 mx-2 outline-blue-950" value={searchRes} onChange={(e) =>{
             setsearchRes(e.target.value)
           }} />
 
@@ -78,11 +81,17 @@ const restaurants =
           
         }}>Top Rated Retaurants </button>
       </div>
+      
       <div className="res-container flex flex-wrap items-center">
        {
         filteredRestaurants.map((restaurant) =>( 
        <Link key={restaurant.info.id}
-        to={"/restaurants/" + restaurant.info.id}><Restrocard  resData = {restaurant}/></Link> ))
+        to={"/restaurants/" + restaurant.info.id}>
+
+          {/* {restaurant.data.promoted ? (<ResCardPromoted resData ={restaurant}/>):()} */}
+          <Restrocard  resData = {restaurant}/>
+          
+          </Link> ))
        }
       </div>
     </div>

@@ -23,7 +23,7 @@ const Header = () =>{
     
     <div className="flex  justify-between border-b-1">
       <div className="logo-container">
-    <img className="logo w-32" src={LOGO_URL}/>
+    <img className="logo w-30 " src={LOGO_URL}/>
     </div>
   
     <div className="nav-items p-4 m-4 ">

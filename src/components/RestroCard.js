@@ -20,4 +20,21 @@ const Restrocard = (props) =>{
    
   )
 }
+
+
+
+// Higher Order Component :------
+
+export const withPromotedLabel = (Restrocard) =>{
+  return (props) =>{
+    return(
+      <div>
+        <label>Promoted</label>
+        <Restrocard {...props}/>
+      </div>
+
+    )
+  }
+}
+
 export default Restrocard;

@@ -34,24 +34,27 @@ const Restaurantmenu = () => {
 
 
       // const {itemCards} = resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]?.card?.card;
-      console.log(itemCards);
+      // console.log( resInfo.cards[5].groupedCard.cardGroupMap.REGULAR.cards);
+
+      const categories = resInfo?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(c => c.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory")
 
   return(
-    <div className="menu">
-      <h1>{name}</h1>
-      <h4>{avgRating} - ({totalRatingsString})</h4>
-      <h4>{costForTwoMessage}</h4>
-      <h2>{cuisines.join(", ")}</h2>
-      <ul>
-        <li>{locality}</li>
-        <li>{sla.slaString}</li>
-      </ul>
+    <div className="menu text-center">
+      <h1 className="font-bold text-2xl mt-2">{name}</h1>
 
+      <h4 className="font-semibold text-xl mt-6 ">⭐{avgRating} - ({totalRatingsString}) -  {costForTwoMessage} </h4>
+      <h2 className="underline text-amber-800 font-bold -ml-48 mt-1">{cuisines.join(", ")}</h2>
       <ul>
+        <li className="font-semibold mt-2 -ml-28 opacity-80">⛔Outlet: {locality}</li>
+        <li className="font-semibold -ml-50 mt-1">⛔{sla.slaString}</li>
+      </ul>
+      
+
+      {/* <ul>
         {itemCards.map((item) =>(
           <li key={item.card.info.id}>{item.card.info.name} -{"Rs."}{item.card.info.price/100 || item.card.info.defaultPrice/100}</li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 };

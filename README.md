@@ -32,3 +32,5 @@ normal js utility function
  - two types of Routing: -
  - 1. client side routing -(routing pages are pre coded in formm of components)
  - 2. server side routing (in server side routing pages are fetches using api/ network call like '/about', '/contact' e.t.c )
+
+ - Higher order component : - Higher order component is a function that takes a component and enhance/(add extra features) that component and returns back a new component. 
