@@ -2,6 +2,7 @@ import Shimmer from "./Shimmer";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
 
 import { useParams } from "react-router";
+import RestaurantCategory from "./RestaurantCategory";
 const Restaurantmenu = () => {
 //   const [resInfo, setResInfo] = useState(null);
 //   useEffect(() => {
@@ -31,30 +32,30 @@ const Restaurantmenu = () => {
 
  const itemCards =
   resInfo?.cards?.[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.[1]?.card?.card?.itemCards || [];
+  // console.log(itemCards);
 
 
       // const {itemCards} = resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]?.card?.card;
       // console.log( resInfo.cards[5].groupedCard.cardGroupMap.REGULAR.cards);
 
-      const categories = resInfo?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(c => c.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory")
+      const categories = resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(c => c.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory");
+
+      console.log(categories);
 
   return(
     <div className="menu text-center">
       <h1 className="font-bold text-2xl mt-2">{name}</h1>
 
       <h4 className="font-semibold text-xl mt-6 ">⭐{avgRating} - ({totalRatingsString}) -  {costForTwoMessage} </h4>
-      <h2 className="underline text-amber-800 font-bold -ml-48 mt-1">{cuisines.join(", ")}</h2>
+      <h2 className="underline text-amber-800 font-bold  mt-1">{cuisines.join(", ")}</h2>
       <ul>
-        <li className="font-semibold mt-2 -ml-28 opacity-80">⛔Outlet: {locality}</li>
-        <li className="font-semibold -ml-50 mt-1">⛔{sla.slaString}</li>
+        <li className="font-semibold mt-2 - opacity-80">{locality}</li>
+        <li className="font-semibold mt-1">{sla.slaString}</li>
       </ul>
-      
+    
 
-      {/* <ul>
-        {itemCards.map((item) =>(
-          <li key={item.card.info.id}>{item.card.info.name} -{"Rs."}{item.card.info.price/100 || item.card.info.defaultPrice/100}</li>
-        ))}
-      </ul> */}
+      {categories.map((category) =>
+        (<RestaurantCategory data= {category?.card?.card}/>))}
     </div>
   );
 };
