@@ -51,7 +51,7 @@ const Restaurantmenu = () => {
       <h4 className="font-semibold text-xl mt-6 ">⭐{avgRating} - ({totalRatingsString}) -  {costForTwoMessage} </h4>
       <h2 className="underline text-amber-800 font-bold  mt-1">{cuisines.join(", ")}</h2>
       <ul>
-        <li className="font-semibold mt-2 - opacity-80">{locality}</li>
+        <li className="font-semibold mt-2 - opacity-80">📍{locality}</li>
         <li className="font-semibold mt-1">{sla.slaString}</li>
       </ul>
     

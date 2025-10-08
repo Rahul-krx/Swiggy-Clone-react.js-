@@ -23,8 +23,11 @@ const ItemList = ({ items }) => {
               <br />
               <span className="text-green-600">
                 {" "}
-                ⭐{item.card.info.ratings.aggregatedRating.rating} (
-                {item.card.info.ratings.aggregatedRating.ratingCount}){" "}
+                <span>
+  ⭐ {item.card.info.ratings?.aggregatedRating?.rating }
+</span>
+ (
+                {item.card.info.ratings?.aggregatedRating?.ratingCount || "Not available"}){" "}
               </span>
             </div>
             <p className="text-md font-semibold opacity-75">{item.card.info.description}</p>

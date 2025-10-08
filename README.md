@@ -37,3 +37,5 @@ normal js utility function
 
  - controlled and uncontrolled component
  - Lifting the state up
+ - Props Drilling
+ - React Context

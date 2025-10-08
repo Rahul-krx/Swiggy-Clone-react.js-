@@ -1,14 +1,18 @@
 import { LOGO_URL } from "../utils/constants";
-import { use, useState } from "react";
+import { useContext, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 const Header = () =>{
   // const btnName = 'Login';
 
   const [btnName, setbtnName]= useState("Login");
+
+  const {LoggedInUser} = useContext(UserContext);
+  // console.log(LoggedInUser)
 
 
   // if no dependency array in useEffect => useEffect will be called on every render.
@@ -37,7 +41,8 @@ const Header = () =>{
 
         {/* if you click on btn then react will re render the whole header  */}
       <button className="btn px-4 border-1 rounded-lg py-2 bg-blue-400 " onClick={() => {
-        btnName === "Login" ? setbtnName('Logout'): setbtnName('Login')}}>{btnName}</button>   
+        btnName === "Login" ? setbtnName('Logout'): setbtnName('Login')}}>{btnName}</button>  
+        <li>User: {LoggedInUser}</li> 
       </ul>
     </div>
      </div>

@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
@@ -8,6 +8,7 @@ import Restaurantmenu from "./components/Restaurantmenu";
 // import Grocery from "./components/Grocery";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Shimmer from "./components/Shimmer";
+import UserContext from "./utils/UserContext";
 {
   <script
     src="https://kit.fontawesome.com/10e58a07e8.js"
@@ -19,12 +20,29 @@ import Shimmer from "./components/Shimmer";
 const Grocery = lazy(() => import("./components/Grocery"));
 const About = lazy(() => import("./components/About"));
 
-const AppLayout = () => (
+const AppLayout = () => {
+
+   const [userName, setuserName] = useState();
+
+  useEffect(() =>{
+    const data = {
+      name: "Rahul Kumar",
+    }
+    setuserName(data.name);
+
+  },[]);
+    return(
+  <UserContext.Provider value={{LoggedInUser: userName}}>
   <>
+  <UserContext.Provider value={{LoggedInUser: "RAHUL"}}>
     <Header />
+    </UserContext.Provider>
+
     <Outlet />
   </>
-);
+    </UserContext.Provider>
+    )
+};
 
 const appRouter = createBrowserRouter([
   {

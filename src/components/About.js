@@ -1,6 +1,9 @@
- import { useEffect } from "react";
+ import { useContext, useEffect } from "react";
 import { ABOUT_URL, ABOUT1_URL} from "../utils/constants";
+import UserContext from "../utils/UserContext";
 const About = () =>{
+
+    const {LoggedInUser} = useContext(UserContext);
 
     useEffect(() =>{
 
@@ -18,6 +21,7 @@ const About = () =>{
     return(
     <>
     <h2 className="about-head">ABOUT US </h2>
+    <h2 className="font-bold">User: {LoggedInUser}</h2>
     <div className="about-p">
     <h3 className="about-h">Foodie is a new age consumer-first organization offering an easy-to-use convenience platform, accessible through a <br/> unified app.😋</h3>
     </div>
