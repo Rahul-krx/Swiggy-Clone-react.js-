@@ -3,6 +3,7 @@ import useRestaurantMenu from "../utils/useRestaurantMenu";
 
 import { useParams } from "react-router";
 import RestaurantCategory from "./RestaurantCategory";
+import { useState } from "react";
 const Restaurantmenu = () => {
 //   const [resInfo, setResInfo] = useState(null);
 //   useEffect(() => {
@@ -11,6 +12,7 @@ const Restaurantmenu = () => {
 
   const {resId} = useParams();
   const resInfo = useRestaurantMenu(resId);
+  const [showIndex, setshowIndex] = useState(null);
 
   // const fetchmenu = async () => {
   //   const data = await fetch(MENU_API + resId );
@@ -54,8 +56,14 @@ const Restaurantmenu = () => {
       </ul>
     
 
-      {categories.map((category) =>
-        (<RestaurantCategory key={category?.card?.card?.title} data= {category?.card?.card}/>))}
+      {categories.map((category, index) =>
+        (<RestaurantCategory 
+        key={category?.card?.card?.title} 
+        data= {category?.card?.card}
+        showItems = {index === showIndex ? true : false}
+        setshowIndex={() =>  setshowIndex(index === showIndex ? null : index)}
+        
+        />))}
     </div>
   );
 };

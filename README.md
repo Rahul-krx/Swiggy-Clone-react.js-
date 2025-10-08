@@ -36,3 +36,4 @@ normal js utility function
  - Higher order component : - Higher order component is a function that takes a component and enhance/(add extra features) that component and returns back a new component. 
 
  - controlled and uncontrolled component
+ - Lifting the state up
