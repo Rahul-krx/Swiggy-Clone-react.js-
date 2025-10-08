@@ -34,3 +34,5 @@ normal js utility function
  - 2. server side routing (in server side routing pages are fetches using api/ network call like '/about', '/contact' e.t.c )
 
  - Higher order component : - Higher order component is a function that takes a component and enhance/(add extra features) that component and returns back a new component. 
+
+ - controlled and uncontrolled component
