@@ -1,9 +1,10 @@
 import Restrocard, {withPromotedLabel} from "./RestroCard";
 // import ResList from "../utils/mockData";
-import { useState, useEffect} from "react";
+import { useState, useEffect, useContext} from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 
 // useState  is used for creating local state variable inside your functional component.
@@ -57,6 +58,7 @@ const restaurants =
     return(
       <h1>Looks like you`re offline, Please check your internet connection🥲</h1>
     )
+   const {  LoggedInUser,setuserName} = useContext(UserContext);
 
 
   return resList.length === 0 ? (<Shimmer/>): (
@@ -80,6 +82,8 @@ const restaurants =
         setfilteredRestaurants(filteredList);
           
         }}>Top Rated Retaurants </button>
+          <label className="mt-4">UserName :</label>
+        <input type="text" placeholder="search" value={LoggedInUser}  className=" border-1 h-8 mt-4 mx-2" onChange={(e) => setuserName(e.target.value)} />
       </div>
       
       <div className="res-container flex flex-wrap items-center">
