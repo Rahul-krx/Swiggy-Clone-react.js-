@@ -5,6 +5,7 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 const Header = () =>{
   // const btnName = 'Login';
@@ -23,6 +24,9 @@ const Header = () =>{
   //   console.log('useEffect called');
   // })
   const onlineStatus = useOnlineStatus();
+
+  const cartItems = useSelector((store) => store.cart.items );
+  console.log(cartItems);
   return(
     
     <div className="flex  justify-between border-b-1">
@@ -37,7 +41,7 @@ const Header = () =>{
         <li className="px-4"><Link to="/about"> About </Link></li>
         <li className="px-4"> <Link to="/contact"> Contact us </Link></li>
         <li className="px-4"> <Link to="/grocery"> Grocery </Link></li>
-        <li className="cart px-4 "><FontAwesomeIcon icon={faCartShopping} /></li>
+        <li className="cart px-4 "><FontAwesomeIcon icon={faCartShopping} />{cartItems.length}</li>
 
         {/* if you click on btn then react will re render the whole header  */}
       <button className="btn px-4 border-1 rounded-lg py-2 bg-blue-400 " onClick={() => {
