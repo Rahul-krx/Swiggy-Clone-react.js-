@@ -9,6 +9,8 @@ import Restaurantmenu from "./components/Restaurantmenu";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Shimmer from "./components/Shimmer";
 import UserContext from "./utils/UserContext";
+import { Provider } from "react-redux";
+import appStore from "./utils/appStore";
 {
   <script
     src="https://kit.fontawesome.com/10e58a07e8.js"
@@ -32,6 +34,7 @@ const AppLayout = () => {
 
   },[]);
     return(
+      <Provider store={appStore}>
   <UserContext.Provider value={{LoggedInUser: userName, setuserName}}>
   <>
   <UserContext.Provider value={{LoggedInUser: "RAHUL"}}>
@@ -41,6 +44,7 @@ const AppLayout = () => {
     <Outlet />
   </>
     </UserContext.Provider>
+    </Provider>
     )
 };
 

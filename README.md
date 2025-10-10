@@ -40,3 +40,6 @@ normal js utility function
  - Props Drilling
  - React Context
  - Justand Library
+
+ # Redux toolkit
+ - install @reduxjs/toolkit and react-redux
