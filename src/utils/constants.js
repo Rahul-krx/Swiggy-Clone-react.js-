@@ -1,3 +1,4 @@
+const CORS_PROXY = "https://corsproxy.io/?";
 export const LOGO_URL =
   "https://png.pngtree.com/template/20191025/ourmid/pngtree-healthy-food-logo-template-emblem-design-concept-creative-symbol-icon-image_323505.jpg";
 export const CDN_URL =
