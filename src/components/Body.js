@@ -5,6 +5,7 @@ import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
+import { MENU_API } from "../utils/constants";
 
 
 // useState  is used for creating local state variable inside your functional component.
@@ -15,6 +16,7 @@ import UserContext from "../utils/UserContext";
    const [filteredRestaurants, setfilteredRestaurants] = useState([]);
 
    const ResCardPromoted = withPromotedLabel(Restrocard);
+   console.log(MENU_API);
 
 
    useEffect(()=>{
@@ -40,6 +42,7 @@ const restaurants =
       (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
     )
     ?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+    // console.log(restaurants);
 
 
     // const restaurants =
