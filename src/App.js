@@ -11,6 +11,7 @@ import Shimmer from "./components/Shimmer";
 import UserContext from "./utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
+import Cart from "./components/Cart";
 {
   <script
     src="https://kit.fontawesome.com/10e58a07e8.js"
@@ -80,6 +81,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/restaurants/:resId",
         element: <Restaurantmenu />,
+      },
+      {
+        path: "/cart",
+        element: <Cart/>
       },
     ],
     errorElement: <Error />,

@@ -41,7 +41,7 @@ const Header = () =>{
         <li className="px-4"><Link to="/about"> About </Link></li>
         <li className="px-4"> <Link to="/contact"> Contact us </Link></li>
         <li className="px-4"> <Link to="/grocery"> Grocery </Link></li>
-        <li className="cart px-4 "><FontAwesomeIcon icon={faCartShopping} />{cartItems.length}</li>
+        <li className="cart px-4 "><Link to={"/cart"}> <FontAwesomeIcon icon={faCartShopping} />{cartItems.length}</Link></li>
 
         {/* if you click on btn then react will re render the whole header  */}
       <button className="btn px-4 border-1 rounded-lg py-2 bg-blue-400 " onClick={() => {

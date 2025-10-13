@@ -43,3 +43,9 @@ normal js utility function
 
  # Redux toolkit
  - install @reduxjs/toolkit and react-redux
+
+ # find the difference
+
+ onClick= {handleAddItem};
+ onClick= {() => handleAddItem(item)};
+ onClick= {handleAddItem(item)};
