@@ -64,3 +64,6 @@ normal js utility function
  - configure parcel config file to disable default babel transpilation
  - jest - npx create-jest
  - install JSDOM Library   
+ - install @babel/preset-react - to make jsx work in test cases
+ - include @babel/preset-react in babel config
+ - install @testing-library/jest-dom
