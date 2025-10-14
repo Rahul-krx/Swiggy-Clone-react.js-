@@ -49,3 +49,18 @@ normal js utility function
  onClick= {handleAddItem};
  onClick= {() => handleAddItem(item)};
  onClick= {handleAddItem(item)};
+
+ # Testing :-
+ - Type of testing
+ - Unit testing
+ - Integration testing
+ - End to end testing (e2e)
+ 
+ # Setting up testing in our project (in react create app testing setup comes as default)
+ - install React testing library
+ - installed jest
+ - installed babel dependencies
+ - Configure Babel
+ - configure parcel config file to disable default babel transpilation
+ - jest - npx create-jest
+ - install JSDOM Library   
