@@ -2,6 +2,9 @@ import { render, screen} from "@testing-library/react";
 import Contact from "../Contact";
 import "@testing-library/jest-dom";
 
+// " test " and " it " both are same thing you can write both :- 
+describe('Contact us page test cases', () => {
+    
 test("contact component should be load", () =>{
     render(<Contact/>)
 
@@ -12,7 +15,7 @@ test("contact component should be load", () =>{
 
 });
 
-test("Button should be load in contact component", () =>{
+it("Button should be load in contact component", () =>{
     render(<Contact/>)
 
     // can be tested using both.
@@ -24,6 +27,7 @@ test("Button should be load in contact component", () =>{
     expect(button).toBeInTheDocument()
 
 });
+
 test("input name should be load in contact component", () =>{
     render(<Contact/>)
     
@@ -33,11 +37,16 @@ test("input name should be load in contact component", () =>{
 
 });
 
-test(" All input box should be load in contact component", () =>{
+test(" 3 input box should be load in contact component", () =>{
     render(<Contact/>)
     
      const inputBoxes = screen.getAllByRole("textbox");
     // Assertion
-    expect(inputBoxes).toBeInTheDocument()
+    expect(inputBoxes.length).toBe(3)
+    // console.log(inputBoxes);
 
 });
+
+});
+
+

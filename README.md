@@ -67,3 +67,6 @@ normal js utility function
  - install @babel/preset-react - to make jsx work in test cases
  - include @babel/preset-react in babel config
  - install @testing-library/jest-dom
+
+ # js :- 
+ - in js there are 7 falsey value
