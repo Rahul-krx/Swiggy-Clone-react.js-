@@ -4,6 +4,7 @@ import {faStar} from '@fortawesome/free-solid-svg-icons';
 
 const Restrocard = (props) =>{
   const{resData} = props;
+  // console.log(resData);
   const {cloudinaryImageId, name,cuisines, avgRating, costForTwo} = resData.info;
 
   // const {image, resName, cuisine} = props; - d estructuring;
