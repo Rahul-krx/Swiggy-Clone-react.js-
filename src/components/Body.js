@@ -82,11 +82,11 @@ const restaurants =
           }}>Search</button>
         </div>
         <button className="filter-btn px-6 border-1 rounded-lg ml-8 mt-4 bg-blue-400 " onClick={() =>{ 
-          const filteredList = resList.filter((res) =>res.info.avgRating > 4.1
+          const filteredList = resList.filter((res) =>res.info.avgRating >= 4.1
         )
         setfilteredRestaurants(filteredList);
           
-        }}>Top Rated Retaurants </button>
+        }}>Top Rated Restaurants </button>
           <label className="mt-4">UserName :</label>
         <input type="text" placeholder="search" value={LoggedInUser}  className=" border-1 h-8 mt-4 mx-2" onChange={(e) => setuserName(e.target.value)} />
       </div>
