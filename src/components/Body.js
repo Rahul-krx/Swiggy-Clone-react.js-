@@ -68,7 +68,9 @@ const restaurants =
     <div className="body">
       <div className="filter flex mb-4">
         <div className="search-box">
-          <input type="text" className="search-input w-42 border-1 rounded-md mt-4 h-10 ml-4 mx-2 outline-blue-950" value={searchRes} onChange={(e) =>{
+          <input type="text" className="search-input w-42 border-1 rounded-md mt-4 h-10 ml-4 mx-2 outline-blue-950" 
+          data-testid="searchInput"
+           value={searchRes} onChange={(e) =>{
             setsearchRes(e.target.value)
           }} />
 
