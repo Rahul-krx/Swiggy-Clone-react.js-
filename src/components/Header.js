@@ -6,9 +6,13 @@ import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
 import { useSelector } from "react-redux";
+import {MENU_API} from "../utils/constants"
 
 const Header = () =>{
   // const btnName = 'Login';
+
+  // const ctr = data.cards[5].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards;
+  // console.log(ctr);
 
   const [btnName, setbtnName]= useState("Login");
 
@@ -26,7 +30,7 @@ const Header = () =>{
   const onlineStatus = useOnlineStatus();
 
   const cartItems = useSelector((store) => store.cart.items );
-  console.log(cartItems);
+  // console.log(cartItems);
   return(
     
     <div className="flex  justify-between border-b-1">
